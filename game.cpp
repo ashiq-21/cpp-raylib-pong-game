@@ -5,6 +5,19 @@ Game::Game()
     screenWidth = 1280;
 
     screenHeight = 800;
+
+    InitAudioDevice();
+
+    music = LoadMusicStream("Sounds/music.mp3");
+
+    PlayMusicStream(music);
+}
+
+Game::~Game()
+{
+    UnloadMusicStream(music);
+
+    CloseAudioDevice();
 }
 
 void Game::Initiate()

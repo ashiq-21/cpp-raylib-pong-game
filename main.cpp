@@ -12,6 +12,8 @@ int main()
 
     while (WindowShouldClose() == false)
     {
+        UpdateMusicStream(g.music);
+
         BeginDrawing();
 
         g.update();

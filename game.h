@@ -5,6 +5,7 @@ class Game
 {
 public:
     Game();
+    ~Game();
     Paddle Player;
     CpuPaddle cpu;
     Ball ball;
@@ -14,4 +15,5 @@ public:
     void update();
     int screenWidth;
     int screenHeight;
+    Music music;
 };
