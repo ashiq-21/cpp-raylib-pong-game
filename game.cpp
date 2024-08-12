@@ -33,13 +33,6 @@ void Game::checkCollision()
 
 void Game::draw()
 {
-    ball.update();
-
-    Player.update();
-
-    cpu.update(ball.ball_y);
-
-    checkCollision();
 
     DrawCircle(screenWidth / 2, screenHeight / 2, 150, GREEN);
 
@@ -50,4 +43,15 @@ void Game::draw()
     Player.draw();
 
     ball.draw();
+}
+
+void Game::update()
+{
+    ball.update();
+
+    Player.update();
+
+    cpu.update(ball.ball_y);
+
+    checkCollision();
 }

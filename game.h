@@ -11,6 +11,7 @@ public:
     void Initiate();
     void checkCollision();
     void draw();
+    void update();
     int screenWidth;
     int screenHeight;
 };

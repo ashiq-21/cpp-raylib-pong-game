@@ -14,6 +14,8 @@ int main()
     {
         BeginDrawing();
 
+        g.update();
+
         ClearBackground(DARKGREEN);
 
         g.draw();
